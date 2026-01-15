@@ -16,13 +16,18 @@ export const processStudyMaterial = async (file: File) => {
         if (!user) throw new Error('User not authenticated');
 
         for (const card of flashCards) {
-            await addFlashCard({
-                userId: user.id,
+            await addFlashCard(user.id, {
+                tree_id: 'default', // TODO: connect to actual tree
                 question: card.question,
                 answer: card.answer,
                 difficulty: 'medium',
-                nextReviewDate: new Date().toISOString(),
-                reviewCount: 0,
+                next_review_date: new Date(),
+                review_count: 0,
+                // SM-2 Algorithm initial values
+                interval: 1,
+                ease_factor: 2.5,
+                repetitions: 0,
+                user_id: user.id
             });
         }
 
