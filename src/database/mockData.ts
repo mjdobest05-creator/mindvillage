@@ -40,6 +40,9 @@ export const mockFlashCards: FlashCard[] = [
         difficulty: 'easy',
         nextReviewDate: '2026-01-16',
         reviewCount: 3,
+        interval: 3,
+        ease_factor: 2.5,
+        repetitions: 3,
     },
 ];
 
