@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-import { Village3D } from '@/components/Village3D';
+import { VillageCanvas3D as Village3D } from '@/components/VillageCanvas3D';
 
 export const VillageScreen = () => {
     return (

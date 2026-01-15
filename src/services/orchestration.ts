@@ -21,13 +21,13 @@ export const processStudyMaterial = async (file: File) => {
                 question: card.question,
                 answer: card.answer,
                 difficulty: 'medium',
-                next_review_date: new Date(),
-                review_count: 0,
+                nextReviewDate: new Date().toISOString(),
+                reviewCount: 0,
                 // SM-2 Algorithm initial values
                 interval: 1,
                 ease_factor: 2.5,
                 repetitions: 0,
-                user_id: user.id
+                userId: user.id
             });
         }
 
