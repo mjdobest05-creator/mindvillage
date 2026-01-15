@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "expo": "~54.0.31",
@@ -16,6 +17,7 @@
     "expo-file-system": "^19.0.21",
     "expo-status-bar": "~3.0.9",
     "firebase": "^12.8.0",
+    "pdfjs-dist": "^5.4.530",
     "react": "19.1.0",
     "react-native": "0.81.5",
     "react-native-reanimated": "^4.2.1",
